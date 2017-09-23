@@ -5,8 +5,8 @@ from urllib.request import urlopen
 
 url = "http://localhost:5000/todo/api/v1.0/tasks"
 
-r = urlopen(url)
+response = urlopen(url)
 
-data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
+data = json.loads(response.read().decode(response.info().get_param('charset') or 'utf-8'))
 
 print(str(data))
