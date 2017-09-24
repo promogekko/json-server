@@ -41,4 +41,4 @@ def create_task():
     return jsonify({'task': task}), 201
 
 if __name__ == '__main__':
-    manager.run(debug=True)
+    manager.run()
