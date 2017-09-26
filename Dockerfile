@@ -12,4 +12,5 @@ WORKDIR /Dev/json-server
 
 EXPOSE 5000
 
-CMD ["python3","json-server.py","runserver"]
+ENTRYPOINT ["python3","json-server.py","runserver"]
+CMD ["-h=0.0.0.0"]
